@@ -1,0 +1,30 @@
+{
+  "name": "thunder-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "thunder": "./build/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "pkg . --targets node14-macos-x64 --output thunder"
+  },
+  "pkg": {
+    "scripts": "build/**/*.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.12",
+    "@types/yargs": "^17.0.7",
+    "pkg": "^5.5.1",
+    "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "thunder-client": "^0.4.2",
+    "yargs": "^17.3.0"
+  }
+}
+
