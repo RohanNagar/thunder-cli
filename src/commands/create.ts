@@ -47,10 +47,10 @@ export const handler = (argv: Arguments<Options>): void => {
   thunder.createUser(finalUser, (err: Error, statusCode: any, result: any) => {
     if (err) {
       process.stderr.write(`[ERROR CODE ${statusCode}] ${result}`);
+      process.exit(1);
     } else {
       process.stdout.write(JSON.stringify(result));
+      process.exit(0);
     }
-  
-    process.exit(0);
   });
 };
