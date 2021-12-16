@@ -11,6 +11,7 @@
 
 # Build outputs
 build/
+*.tar.gz
 
 # OS hidden files
 .DS_Store
