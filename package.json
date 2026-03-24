@@ -20,7 +20,7 @@
     "@types/node": "^25.0.0",
     "@types/yargs": "^17.0.7",
     "pkg": "^5.5.1",
-    "typescript": "^5.0.2"
+    "typescript": "^6.0.2"
   },
   "dependencies": {
     "thunder-client": "^0.4.2",
